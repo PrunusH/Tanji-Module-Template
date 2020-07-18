@@ -16,6 +16,8 @@ namespace Tanji_Module_Template
     [Module("", "")]
     public partial class Form1 : ExtensionForm
     {
+        public override bool IsRemoteModule => true;
+
         public Form1()
         {
             InitializeComponent();

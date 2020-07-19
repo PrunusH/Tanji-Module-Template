@@ -1,18 +1,19 @@
 # Tanji Module Template
-![New project](New%20project.png)
+![New project](module.png)
 
 Basic Tanji module base:
 - Visual C# Windows Forms App
-- targeting .NET Framework 4.7.1
+- targeting .NET Framework 4.7.2
 - added `using` directives
 - added mandatory `[Module()]` line
 - renamed inheritance from `Form` to `ExtensionForm`
+- set IsRemoteModule => true to debug externally
 
 # Acknowledgements
 Based on Darkbox Urban resource ["Tanji/For developers/Plugin development/Setting up"](https://urban.darkbox.nl/tanji/develop/7) (revision: last edited: 23-05-2018 19:16:31) by [Squiz](https://urban.darkbox.nl/account/Squiz) which details the manual steps.
 
 # Add the template
-Place the released ZIP in the default Project template directory `%userprofile%\Documents\Visual Studio 2017\Templates\ProjectTemplates\`
+Place the released ZIP in the default Project template directory `%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates\`
 
 If you have set a custom directory, you can see it at `Visual Studio menu bar "Tools"/Options…/Projects and Solutions/Locations/User project templates location`
 
@@ -29,6 +30,12 @@ If you open Form1.cs before adding the dependencys it will fuck you up. If so, a
 - Change the Assembly name of the project at `Visual Studio menu bar "Project"/Properties…/Application/Assembly name`
 
 You may also want to update the Copyright year at `Assembly Information…`
+
+# __TIP__: Use the template in just two steps
+1. Verify that your dependencies are located at `%USERPROFILE%\references`
+![New project](references.png)
+2. Create a new project in `C:\Users\%USERNAME%\Desktop`
+
 # Make a template yourself
 - Visual Studio menu bar "Project"/Export Template…
 - Keep Template Type = Project template

@@ -3,7 +3,7 @@
 
 Basic Tanji module base:
 - Visual C# Windows Forms App
-- targeting .NET Framework 4.7.2
+- targeting .NET Framework 4.8
 - added `using` directives
 - added mandatory `[Module()]` line
 - renamed inheritance from `Form` to `ExtensionForm`

@@ -21,6 +21,7 @@ namespace Tanji_Module_Template
         public Form1()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
         }
     }
 }
